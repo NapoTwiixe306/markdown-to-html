@@ -1,19 +1,113 @@
 :root{
     --BGColor: #232323;
     --TxtColor: #fff;
+    --ImportantElement: rgb(255, 166, 0);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: var(--BGColor);
     color: var(--TxtColor);
-    font-weight: 100;
+
 }
 
-h1, h3, p, img{
+.main_section{
+    padding: 10px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 30px auto;
+    height: 350px;
+    background-color: var(--TxtColor);
+
+    flex-wrap: wrap;
+    border-radius: 19px;
+    color: #232323;
+}
+
+.main_section h1{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.main_section h1 span{
+    color: var(--ImportantElement);
+}
+
+.main_section p{
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main_section p span{
+    color: var(--ImportantElement);
+}
+
+.main_section .cita{
+    margin-top: 35px;
+    font-size: 35px;
+    width: 900px;
+}
+
+.main_section img{
+    width: 250px;
+    float: right;
+    margin-right: 250px;
+    margin-top: -294px;
+    border-radius: 19px;
+}
+
+.table {
+    position: relative;
+    margin-top: 50px;
+}
+table {
+    width: 90%; 
+    max-width: 1600px;
+    margin: auto; 
+    table-layout: fixed;
+    
+}
+
+th, td {
+    border: 1px solid #c5c5c5;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+}
+#checkBoxList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+th {
+    background-color: rgb(0, 153, 153);
+    color: white;
+}
+
+.myCheckbox {
+    margin-right: 5px;
+}
+
+#checkBoxList {
+    color: var(--TxtColor);
     text-align: center;
 }
+  
 
-a{
-    color: rgb(0, 200, 255);
-    text-decoration: none;
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
