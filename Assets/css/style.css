@@ -1,0 +1,19 @@
+:root{
+    --BGColor: #232323;
+    --TxtColor: #fff;
+}
+
+body{
+    background-color: var(--BGColor);
+    color: var(--TxtColor);
+    font-weight: 100;
+}
+
+h1, h3, p, img{
+    text-align: center;
+}
+
+a{
+    color: rgb(0, 200, 255);
+    text-decoration: none;
+}
